@@ -12,7 +12,7 @@ fun main()
     val y:Int=10
 
     println("Greater number is ${y.greterValue(x)}")
-    /*** The benefit of using "infix" keyword is we can call is by "y greterValue x" */
+    /*** The benefit of using "infix" keyword is we can call is by "y greterValue x"   */
 
 
 
