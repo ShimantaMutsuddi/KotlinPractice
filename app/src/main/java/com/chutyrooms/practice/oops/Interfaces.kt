@@ -69,7 +69,7 @@ fun main()
     myButton.onClick()
 }*/
 
-interface MyInterface1
+/*interface MyInterface1
 {
 
     fun doSomething()
@@ -100,12 +100,85 @@ class MyClass : MyInterface1,MyInterface2
         TODO("Not yet implemented")
     }
 
+}*/
+
+/*interface MyInterface{
+
+    val prop: Int
+    get()= 23  // property with implementation
+   val test:Int
+   fun foo(): String
+   fun hello()
+   {
+       println("Hello world")
+   }
 }
+
+class InterfaceImp: MyInterface{
+    override val test: Int=26
+    override fun foo(): String="lol"
+
+
+}*/
+
+/*interface  A {
+    fun CallMe() {
+        println("From interface A")
+    }
+}
+
+    interface  B {
+        fun CallMe() {
+            println("From interface B")
+        }
+    }
+
+ class  Child : A,B{
+     override fun CallMe() {
+         super<A>.CallMe()
+         super<B>.CallMe()
+     }
+ }*/
+
+// Interface A with 5 abstract methods
+interface A {
+    fun method1()
+    fun method2()
+    fun method3()
+    fun method4()
+    fun method5()
+}
+
+// Abstract class implementing interface A with default implementations
+abstract class AbstractA : A {
+    override fun method1() {}
+    override fun method2() {}
+    override fun method3() {}
+    override fun method4() {}
+    override fun method5() {}
+}
+
+
+    // Class B inheriting from AbstractA and overriding only 3 methods
+    class B : AbstractA() {
+        override fun method1() {
+            // Override method1
+        }
+
+        override fun method2() {
+            // Override method2
+        }
+
+
+    }
+
+
 
 fun main()
 {
-    val myClass=MyClass()
-    myClass.doSomthing()
-    myClass.absMethod()
-    myClass.absMethod("Shimanta")
+    //val obj =Child()
+    //.CallMe()
+
+
+
 }

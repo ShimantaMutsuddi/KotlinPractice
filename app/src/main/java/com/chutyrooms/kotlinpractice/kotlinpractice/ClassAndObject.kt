@@ -2,10 +2,9 @@ package com.chutyrooms.kotlinpractice.kotlinpractice
 
 fun main()
 {
-    val obj: String?=null
+    val name: String?=null
 
-    if(obj!=null)
-    {
-        println("Hello")
-    }
+   // println(if(name==null) -1 else name)
+    var lambda={a:Int,b:Int->a+b}
+    println(lambda(2,3)  )
 }
